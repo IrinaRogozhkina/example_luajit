@@ -9,6 +9,7 @@ int main()
 
 	luaL_openlibs(vm_state);
 
+	/* hoho */
 	luaL_loadfile(vm_state, "ex.lua");
 
 	int r = lua_pcall(vm_state, 0, 0, 0);
